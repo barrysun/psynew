@@ -1,0 +1,84 @@
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/onlineTest.css" rel="stylesheet" type="text/css" />
+ 
+ </head>
+<body>
+<div class="main">
+<div class="head clearfix">
+	<div class="logoImg fl">
+    	<img src="images/icon_07.png" height="" />
+    </div>
+</div>
+<div class="online clearfix">
+	<div class="OTtit borderC">
+    	这个部分会帮助我们寻找你的
+												<span style="font-weight: bold; font-size: 14px; color: #3F7DBD;">兴趣所在</span>。这里每一条都描述了人们从事某种工作的具体事务，请单纯的回答你
+												<span style="font-weight: bold; font-size: 14px; color: #3F7DBD;">喜欢或是不喜欢</span>做这些事情。
+												<span style="font-weight: bold; font-size: 14px; color: #3F7DBD;">不要考虑</span>你有没有接受过相关的教育或训练，也不要考虑这些事情能挣多少钱。回答的时候请从上往下顺序回答，不要跳过任何题目。
+                       
+    </div>
+    <div class="OTLeft borderC">
+      <div class="bar" id="navt">
+        <div class="barw">
+          <h4>当前做题情况</h4>
+          <div class="barBox clearfix">
+            #{TITLESTR}#
+          </div>
+        </div>
+      </div>
+         <form id="form1" method="post"  action="Question.aspx">
+    <div class="OTcont">
+    	#{IPHTML}#
+    </div>
+    <div class="OTBtn">
+    	<input id="anssubmit" type="button" value="提交" />
+    </div>
+  
+             </form>
+</div>
+
+  
+</div>
+</div>
+
+<script type="text/javascript" src="jquery/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript">
+    $(window).scroll(function() {
+    var scrolls = $(this).scrollTop();
+    if(scrolls > 200){
+    $("#navt").addClass("fix");
+    }else{
+    $("#navt").removeClass("fix");
+    }
+    });
+
+    $(function(){
+    $("#anssubmit").click(function(){
+    var ipcount=0;
+    $(".barBox span").each(function(){
+    if(!$(this).hasClass("complete")){ ipcount++; }
+    });
+    if(ipcount>0)
+    {
+     alert("未答完本页！");
+    }
+    else
+    {
+    $("#form1").submit();
+    }
+
+    });
+    });
+  </script>
+  <script type="text/javascript">
+    function checkAnswer(id)
+    {
+      document.getElementById(id).className="complete";
+    }
+
+  </script>
+    </body>
+

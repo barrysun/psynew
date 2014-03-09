@@ -1,0 +1,187 @@
+
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>领航人生</title>
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/onlineTest.css" rel="stylesheet" type="text/css" />
+  
+  
+</head>
+
+<body>
+<div class="main">
+<div class="head clearfix">
+	<div class="logoImg fl">
+    	<img src="images/icon_07.png" height="" />
+    </div>
+</div>
+<div class="online clearfix">
+	<div class="OTtit borderC">
+    	这个部分会帮助我们了解你的
+												<span style="font-weight: bold; font-size: 14px; color: #3F7DBD;">价值观</span>，特别是工作中什么对你最重要。在下面屏幕右侧列表中选择你认为对你"最重要"的4项填在左侧对应的框中，然后再依次选择"其次重要"的4项、"一般重要"的4项、"有点重要"的4项、和"相对来说最不重要"的4项，填到左侧对应的框中。
+												<span style="font-weight: bold; font-size: 14px; color: #3F7DBD;">注意每一类中请严格选择4项，不多也不少</span>。左侧每个框中的顺序无关紧要。如果你要调整之前的选择，请选中左侧框中的条目，移回右侧，然后再改选左侧的框中。同一类别中顺序不重要，即同一框内不分先后。
+    </div>
+    <div class="OTLeft borderC">
+    <div class="OTcont clearfix">
+    	<div class="otcLeft fl">
+        	<h4 class="selectTit">答案选项</h4>
+            <div class="row">
+            	<select class="selectC select1" name="questionlist" id="questionlist" multiple="multiple">
+                #{WILOPTIONS}#
+              </select>
+            </div>
+        </div>
+        <div class="otcRight fl">
+        	<div class="row">
+            	<div class="BtnLeft fl"></div>
+                <div class="Btnright fl">
+                	<h4 class="selectTit">题目</h4>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="BtnLeft fl">
+                	<input type="button" value="》选择》" onclick="select_answer('wilanswer1')" />
+                    <input type="button" value="《撤销《" onclick="return_answer('wilanswer1')" />
+                </div>
+                <div class="Btnright fl">
+                	<span>寻找理想工作时，我认为<strong>最重要</strong>的是</span>
+                	<select class="selectC select2" name="wilanswer1" id="wilanswer1" multiple="multiple"></select>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="BtnLeft fl">
+                	<input type="button" value="》选择》" onclick="select_answer('wilanswer2')" />
+                    <input type="button" value="《撤销《"   onclick="return_answer('wilanswer2')" />
+                </div>
+                <div class="Btnright fl">
+                	<span>寻找理想工作时，我认为<strong>其次重要</strong>的是</span>
+                	<select class="selectC select2" name="wilanswer1" id="wilanswer2" multiple="multiple"></select>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="BtnLeft fl">
+                	<input type="button" value="》选择》" onclick="select_answer('wilanswer3')" />
+                    <input type="button" value="《撤销《"   onclick="return_answer('wilanswer3')"/>
+                </div>
+                <div class="Btnright fl">
+                	<span>寻找理想工作时，我认为<strong>一般重要</strong>的是</span>
+                	<select class="selectC select2" name="wilanswer1" id="wilanswer3" multiple="multiple"></select>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="BtnLeft fl">
+                	<input type="button" value="》选择》" onclick="select_answer('wilanswer4')" />
+                    <input type="button" value="《撤销《"  onclick="return_answer('wilanswer4')" />
+                </div>
+                <div class="Btnright fl">
+                	<span>寻找理想工作时，我认为<strong>有点重要</strong>的是</span>
+                	<select class="selectC select2" name="wilanswer1" id="wilanswer4" multiple="multiple"></select>
+                </div>
+            </div>
+          <div class="row">
+            <div class="BtnLeft fl">
+              <input type="button" value="》选择》" onclick="select_answer('wilanswer5')" />
+              <input type="button" value="《撤销《"  onclick="return_answer('wilanswer5')" />
+            </div>
+            <div class="Btnright fl">
+              <span>
+                寻找理想工作时，我认为<strong>相对来说不重要</strong>的是
+              </span>
+              <select class="selectC select2" name="wilanswer1" id="wilanswer5" multiple="multiple"></select>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="OTBtn">
+      <form name="form1" id="form1" action="Question.aspx" method="POST">
+        <input type="hidden" value="" name="answer1" id="answer1"/>
+        <input type="hidden" value="" name="answer2" id="answer2"/>
+        <input type="hidden" value="" name="answer3" id="answer3"/>
+        <input type="hidden" value="" name="answer4" id="answer4"/>
+        <input type="hidden" value="" name="answer5" id="answer5"/>
+       
+        <input type="submit" onclick="submit_action();" value="下一页" />
+      </form>
+      
+    	
+    </div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript" src="jquery/jquery-1.9.1.min.js"></script>
+ <script type="text/javascript">
+function tijiao(){
+	   alert("提交");
+}
+//选择答案
+//传入的answer_number 就是表示选择的是那个空 
+function select_answer(answer_number){
+	   var MAX_INPUT_SIZE=4;
+	   var question=document.getElementById("questionlist");
+	   var obj=document.getElementById(answer_number);
+	   for(var i=0;i<question.options.length;i++){
+		   if(question.options[i].selected){
+			   if(obj.options.length<MAX_INPUT_SIZE){
+				   var answer=question.options[i].value;
+				   obj.options.add(new Option(question.options[i].innerText,answer+""));
+				   question.options.remove(i);
+			   }else{
+				   alert("此类选项最多选择不超过"+MAX_INPUT_SIZE+"个！");
+			   }
+		   }
+	   }
+}
+
+function return_answer(answer_number){
+	   var question=document.getElementById("questionlist");
+	   var obj=document.getElementById(answer_number);
+	   for(var i=0;i<obj.options.length;i++){
+		   if(obj.options[i].selected){
+			   var answer=obj.options[i].value;
+			   question.add(new Option(obj.options[i].innerText,answer+""));
+			   obj.options.remove(i);
+		   }
+	   }
+}
+
+function submit_action(){
+	   
+	  var obj1 = document.getElementById("wilanswer1");
+	  var obj2 = document.getElementById("wilanswer2");
+	  var obj3 = document.getElementById("wilanswer3");
+	  var obj4 = document.getElementById("wilanswer4");
+	  var obj5 = document.getElementById("wilanswer5");
+	  
+	  var answer1=document.getElementById("answer1");
+	  var answer2=document.getElementById("answer2");
+	  var answer3=document.getElementById("answer3");
+	  var answer4=document.getElementById("answer4");
+	  var answer5=document.getElementById("answer5");
+	  var MAX_INPUT_SIZE=4;
+	  
+	  if((obj1!=null&&obj2!=null&&obj3!=null&&obj4!=null&&obj5!=null)
+			  &&obj1.options.length==MAX_INPUT_SIZE&&obj2.options.length==MAX_INPUT_SIZE
+			  &&obj3.options.length==MAX_INPUT_SIZE
+			  &&obj4.options.length==MAX_INPUT_SIZE&&obj5.options.length==MAX_INPUT_SIZE){
+		  for(var i=0;i<4;i++){
+			  
+				  answer1.value=answer1.value+obj1.options[i].value+"=";
+				  answer2.value=answer2.value+obj2.options[i].value+"=";
+				  answer3.value=answer3.value+obj3.options[i].value+"=";
+				  answer4.value=answer4.value+obj4.options[i].value+"=";
+				  answer5.value=answer5.value+obj5.options[i].value+"=";
+			  
+		  }
+		//  alert(answer1.value);
+		  document.getElementById("form1").submit();	  
+	  }else{
+		  alert("做题出现问题,请查看答题是否有错 ");
+	  }
+	 
+	
+}
+</script>
+</body>
+

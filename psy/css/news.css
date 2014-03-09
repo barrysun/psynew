@@ -1,0 +1,42 @@
+
+
+.searchBox{ border:1px solid #0a75d8; margin-bottom:15px; padding:20px 0 20px 10px; background:#fff; }
+.sbIpt{ height:25px; line-height:25px; width:190px;}
+.sbBtn{ background:url(../images/icon_11.gif) no-repeat; border:0; width:78px; height:30px; color:#fff; letter-spacing:3px; font-size:14px; font-weight:bold; cursor:pointer;}
+
+.content{}
+.contLeft{ width:300px;}
+.hotNew{ padding:10px; background:url(../images/hot.png) no-repeat top right #fff; }
+.hotNew h4{color:#0a75d8; padding-bottom:10px;}
+.hotTit{ display:block; height:25px; line-height:25px;}
+.detBtn{ padding-top:10px; text-align:right;}
+.detBtn a{ font-size:14px; color:#d21d24; text-decoration:underline;}
+.contRight{ width:780px;  }
+.newsW{ background:#fff;}
+.newTit{ height:29px; line-height:29px; background:url(../images/newNav.jpg) no-repeat; padding-left:10px;}
+.newTit h4{ background:url(../images/titleico.gif) no-repeat left; padding-left:20px; color:#fff;}
+.newsCont{ padding:10px;}
+.newsList li{ overflow:hidden; *zoom:1; border-bottom:1px dashed #999; padding:10px 0 10px 20px; background:url(../images/new_arrow2.gif) no-repeat left;}
+.newsList li a:hover{ color:#0a75d8;}
+.newsList li span{ color:#999;}
+
+
+.tab_box{ padding:15px 0 15px 15px;}
+.exList li{ border-bottom:1px dashed #ddd; padding:5px 0;}
+.exportImg{ width:110px;}
+.exportImg a{ display:block; width:100px; height:125px; font-size:0; background:url(../images/default.png) no-repeat;}
+.exportInfo{ width:640px;}
+.exportInfo h4{ font-size:12px; padding-bottom:10px;}
+.exportInfo h4 a{ font-weight:bold; font-size:13px;}
+.exportInfo h4 a:hover{ color:#0a75d8;}
+.exportInfo .exJob{ padding-bottom:5px;}
+.exportInfo .detInfo{ height:75px; overflow:hidden;}
+
+.eiCont{ padding:10px;}
+
+.pageNav{}
+.pageNav h3{ background:#0a75d8; font-size:14px; font-weight:bold; color: #fff; padding:0 10px; height:35px; line-height:35px;}
+.pageNav .lnList{ padding:5px 10px; background:#fff;}
+.pageNav .lnList a{ display:block; background:url(../images/05.gif) no-repeat left; height:30px; line-height:30px; padding-left:10px; font-weight:bold; font-size:14px;}
+.pageNav .lnList a.on{ color:#0a75d8;}
+.pageDet{ padding:10px;}

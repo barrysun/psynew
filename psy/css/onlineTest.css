@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+.main .head{}
+.online{ font-size:15px; margin-bottom:20px;}
+.OTLeft{  padding:10px 140px 10px 100px; position:relative; }
+.OTtit{text-indent:2em; margin-bottom:10px; font-size:14px; line-height:1.6; padding:10px;}
+.OTcont{}
+.qusList{ padding:10px; border-bottom:1px dashed #ddd; border-left:2px solid #fff;}
+.qusList:hover{ background:#f2f2f2; border-left:2px solid #0a75d8;}
+.qlTit{ font-size:14px; font-weight:bold; padding-bottom:10px;}
+.qlTit span{ display:inline-block; width:20px;}
+.answer{ padding-left:20px;}
+.answer li{ float:left; width:160px;}
+.answer li input{ vertical-align:-2px;}
+
+.OTBtn{ text-align:center; padding:20px 0 10px 0;}
+.OTBtn input{ padding:5px 30px; letter-spacing:5px; background:#d21d24; color:#fff; font-weight:bold; border:0; border-radius:5px; cursor:pointer;}
+
+
+.bar{  }
+.barw{border-bottom:2px solid #0a75d8; background:#fff; padding-bottom:10px; margin-bottom:10px;}
+.fix{position:fixed; left:0; top:0;_position:absolute;_top:expression(eval(document.documentElement.scrollTop)); z-index:999; width:100%;}
+.fix .barw{width:858px; margin:0 auto; padding:10px 140px 10px 100px;}
+.bar h4{ font-size:14px; font-weight:bold; color:#0a75d8; height:30px;line-height:30px;}
+.barBox{}
+.barBox span{ display:inline-block; width:30px; height:30px; border:1px solid #7ab1e3;text-align:center;line-height:30px; margin-bottom:5px;}
+.barBox .complete{ background:#72AAEE; color:#fff;}
+
+.otcLeft{ width:280px;}
+.selectTit{ font-size:14px; background:#066ecf; height:35px; line-height:35px; padding-left:10px; color:#fff; font-weight:bold;}
+.selectC{width:280px; }
+.select1{width:280px;height:490px; }
+.select2{width:280px;height:80px; }
+.BtnLeft{ width:270px; text-align:center; padding-top:50px;}
+.BtnLeft input{ padding:2px 10px; margin:0 10px; letter-spacing:5px; background:#3F7DBD; color:#fff; font-weight:bold; border:0; border-radius:5px; cursor:pointer;}
+.otcLeft .selectTit{ margin:20px 0 40px 0;}
+.Btnright{width:280px;}
+.Btnright span{ display:block;}
+.Btnright span strong{ color:#3F7DBD;}
+.otcRight .row{ margin-top:20px;}

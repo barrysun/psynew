@@ -1,0 +1,72 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body,html{ background:url(../images/icon_02.png) repeat-x #f2f2f2;}
+.gas{ display:inline-block; width:22px; height:2px;}
+.gas1{ display:inline-block; width:10px; height:2px;}
+.bold14{ font-size:14px; font-weight:bold;}
+.bold16{ font-size:16px; font-weight:bold;}
+.vGas{ height:15px;}
+.hide{ display:none;}
+.borderC{border:1px solid #ddd; background:#fff;}
+.oprate{ color:#0a75d8; text-decoration:underline;}
+.oprate:hover{text-decoration:underline;}
+.unline{ text-decoration:underline;}
+
+.main{width:1100px; margin:0 auto;}
+.head{ height:110px;}
+.before{ width:411px; height:35px; line-height:28px; background:url(../images/icon_04.gif) no-repeat; color:#8fcfff; padding-left:40px;}
+.before a{color:#8fcfff; text-decoration:underline;}
+
+.logoImg{ margin-top:30px;}
+.logoImg img{ height:70px;}
+.login{}
+.login fieldset{ border:1px solid #b0b0b0; width:440px; padding:5px 0 10px 10px; }
+.login fieldset legend{color:#0a75d8; font-size:14px; padding:0 10px; font-weight:bold;}
+.login fieldset .userIpt,.login fieldset .passIpt{ height:25px; width:135px; line-height:25px; padding-left:20px; border:1px solid #b0b0b0;}
+.login fieldset .passIpt{background:url(../images/icon_16.gif) no-repeat left #fff;}
+.login fieldset .userIpt{ background:url(../images/icon_14.gif) no-repeat left #fff;}
+.loginBtn{display:inline-block; line-height:30px; background:url(../images/icon_11.gif) no-repeat; border:0; width:78px; height:30px; color:#fff; letter-spacing:3px; font-size:14px; font-weight:bold; cursor:pointer;}
+
+.nav{ height:50px;  background:url(../images/icon_23.gif) repeat-x;  border-top-left-radius:5px; border-top-right-radius:5px;}
+.nav dl{ float:left; position:relative;}
+.nav dl dt{ padding: 0 25px; font-size:14px; letter-spacing:3px; height:50px; line-height:50px; background:url(../images/icon_26.gif) no-repeat left;}
+.nav dl dt a{color:#8fcfff; }
+.nav dl dd{ position:absolute; display:none; z-index:100; top:50px; left:0; background:#0064bd; width:100%; border:1px solid #abacad; border-bottom:0;}
+.nav dl dd a{display:block; height:30px; line-height:30px; text-align:center; color:#8fcfff; font-size:14px; border-bottom:1px solid #abacad;}
+.nav .navFirst dt{border-top-left-radius:5px; background:none;}
+.nav a:hover,.nav .current{ color:#fff;}
+
+.links{ padding:10px 10px 0 10px;}
+.linkTit{ width:70px;}
+.linkA{ width:1000px;}
+.linkA a{ display:inline-block; padding:0 15px 10px 0;}
+
+.footer{ border-top:2px solid #0a75d8; padding-top:10px;}
+.footer p{ text-align:center;}
+
+.page{ padding:10px 0 15px 0;}
+.page ul{ text-align:center;}
+.page li{ display:inline;}
+.page li a{padding: 0 10px;font-size: 14px;display: inline-block;line-height: 28px;border: 1px solid #dddddd;}
+.page li a:hover,.page li a.selected{background:#0a75d8;color: #fff;}
+.page ul li span{background:#0a75d8;color:#f3e2f6; padding: 0 10px;font-size: 14px;display: inline-block;line-height: 28px;}
+
+.studyTit{ background:#ddd;}
+.studyTit li{ float:left; height:30px;}
+.studyTit li a{ display:inline-block; padding:0 20px; line-height:30px; position:relative; top:-1px; border-top:1px solid #abacad; font-weight:bold; font-size:14px;}
+.studyTit li.current a{ border-top:2px solid #066ecf; background:#fff; line-height:29px; color:#0a75d8;}
+.studyCont{ padding:10px 0 10px 10px;}
+
+.curmbs{height:35px; line-height:35px; border:1px solid #ddd; margin-bottom:10px; padding-left:10px; background:#fff;}
+.curmbs a{ color:#0a75d8;}
+.colorC{color:#0a75d8;}
+
+.hotTel{ padding:20px 20px 0 0;text-align:right; font-size:18px; font-weight:bold;}
+.hotTel span{display:inline-block; height:35px; line-height:35px;}
+.hotTel .telRed{ color:#cf1a22;}
+.hotTel .telBlue{ background:url(../images/tel.jpg) no-repeat left; padding-left:35px; color:#066ecf;}
+
+.contact h3{ font-size:14px; font-weight:bold; background:#0a75d8; color:#fff; padding:5px 15px;}
+.contactDet{ padding:10px 10px 0 10px; background:url(../images/letter.jpg) no-repeat right bottom;}
+.contactDet .row{ padding-bottom:10px;}

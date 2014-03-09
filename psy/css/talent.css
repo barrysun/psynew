@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+.talentIpt{border:1px solid #7eb5f5; width:200px; margin-right:10px; padding:3px 5px;}
+
+.platform{ border:1px solid #abacad; background:#fff;}
+.tab_box{ padding:20px;}
+.filterT{ border-bottom:1px dashed #ddd; margin-bottom:10px;}
+.filterT .row{ padding-bottom:10px;}
+.filterT .row .filterSpan{ float:left; width:70px; text-align:center; padding:3px 0;}
+.filterT .row a{}
+.filterT .row .aWrap{ float:left;}
+.aWrap a{ display:inline-block; padding:3px 10px;}
+.aWrap a.on{ background:#0a75d8; color:#fff;}
+
+.tabList{ border:1px solid #ddd;}
+.tabList thead th{ height:35px; background:#dceeff;}
+.tabList tbody td{ text-align:center; height:35px;}

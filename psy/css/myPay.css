@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+.leftNav{ width:220px; border:1px solid #ddd;}
+.leftNav h3{ background:#0a75d8; font-size:14px; font-weight:bold; color: #fff; padding:0 10px; height:35px; line-height:35px;}
+.leftNav .lnList{ padding:5px 10px; background:#dceeff;}
+.leftNav .lnList a{ display:block; background:url(../images/05.gif) no-repeat left; height:30px; line-height:30px; padding-left:10px; font-weight:bold; font-size:14px;}
+.leftNav .lnList a.on{ color:#0a75d8;}
+.rightMain{ width:860px; border:1px solid #ddd; background:#fff;} 
+.rightMain .studyTit li{ height:35px;}
+.rightMain .studyTit li a{ line-height:35px; height:35px; position:relative;}
+.rmCont{ padding:20px;}
+
+.productList{ border-bottom:1px dashed #ddd; padding:10px 0;}
+.productList dt{ font-size:14px; font-weight:bold; color:#0a75d8; padding-bottom:10px;}
+.productList .proBtn{ padding-top:10px;}
+.productList .proBtn a{ display:inline-block; width:84px; height:32px; line-height:32px; text-align:center; color:#fff;}
+.productList .proBtn .proBtn1{ background:url(../images/inpage_10.png) no-repeat;}
+.productList .proBtn .proBtn2{ background:url(../images/inpage_101.png) no-repeat;}
+
+.shopTit{ color:#0a75d8; text-align:center; padding-bottom:10px;}
+.myShop{ border:1px solid #96c7ff;}
+.myShop thead th{ background:#edf6fe; font-size:14px; border-bottom:1px solid #96c7ff; font-weight:bold; color:#0a75d8; height:35px;}
+.myShop tbody td{ height:35px; text-align:center;}
+.myShop1 .col1{ width:20%;}
+.myShop1 .col2{ width:8%;}
+.myShop1 .col3{ width:8%;}
+.myShop1 .col5{ width:8%;}
+.myShop1 .col7{ width:10%;}
+
+.shopDiv{ padding-top:10px; font-weight:bold;}
+.shopDiv .money{ color:#cf1a22;}
+
+.btnW{ padding:20px 0 20px 0;}
+.btnW a{ display:inline-block; background:url(../images/27.gif) no-repeat; width:115px; text-align:center;  height:28px; line-height:28px; background-position:top; font-weight:bold; color:#000;}
+.btnW a:hover{background-position:bottom;}

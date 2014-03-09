@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+.applyBtn{ display:inline-block; text-align:center; width:84px; height:32px; line-height:32px;  color:#fff; background:url(../images/inpage_10.png) no-repeat; font-weight:bold;}
+
+.jobDet{ border:1px solid #abacad; background:#fff; border-top:2px solid #0a75d8; padding:15px 30px;}
+.jdTit{ color:#d21d24; border-bottom:2px dashed #ddd; padding:10px 0; margin-bottom:10px;}
+.detailsR{ padding:30px 10px 0 0;}
+.company dt{ color:#0a75d8; padding-bottom:10px;}
+.company dd{ padding-bottom:5px;}
+.company dd .company2{ display:inline-block; width:90px;}
+.row{ margin-bottom:10px;}
+.companyTab{ }
+.companyTab td{ border:1px solid #ddd; height:35px;}
+.companyTab .col1{ width:20%; text-align:center; background:#f2f2f2;}
+.companyTab .col2{ width:30%; padding-left:10px;}
+.conpanyBox{ margin-bottom:15px;}
+.conpanyBox h4{ color:#0a75d8; padding:10px 0; margin-bottom:10px; border-bottom:1px solid #ddd;}
+.conpanyBox .cbCont{ padding:0 10px;}
+.conBtnw{ text-align:center;}
+
+.resumeName{ padding:15px 0 15px 0; position:relative; color:#0a75d8; text-align:center;}
+.resumeName .applyBtn{ position:absolute; bottom:10px; right:0;}
+.reTabW{ padding-bottom:20px;}
+.retab{ border:1px solid #96c7ff;}
+.retab thead td{ background:#edf6fe; font-size:14px; border-bottom:1px solid #96c7ff; font-weight:bold; color:#0a75d8;}
+.retab td{ height:35px; padding-left:10px;}
+.retab tbody .col1{ width:150px; text-align:right;}
+.retab1 tbody .col1{ width:15%;}
+.retab1 tbody .col2{ width:25%;}
+.retab3 tbody .row1{}
+
+

@@ -1,0 +1,9 @@
+﻿.border {
+	BORDER-RIGHT: #6493c8 1px solid; BORDER-TOP: #6493c8 1px solid; BACKGROUND: #fff; BORDER-LEFT: #6493c8 1px solid; BORDER-BOTTOM: #6493c8 1px solid
+}
+.tdbg {
+	BACKGROUND: #e6eff8; LINE-HEIGHT: 120%; border:2px
+}
+.gridtitle {
+	FONT-WEIGHT: bold; BACKGROUND: url(../../Images/title.gif)  repeat-x left top; COLOR: #3666aa; LINE-HEIGHT: 120%
+}

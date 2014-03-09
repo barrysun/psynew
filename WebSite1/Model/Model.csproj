@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7F6A6D88-A048-4438-B598-88389EFE3DB9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Model</RootNamespace>
+    <AssemblyName>Model</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs" />
+    <Compile Include="Community.cs" />
+    <Compile Include="Company.cs" />
+    <Compile Include="Desction.cs" />
+    <Compile Include="Dialog.cs" />
+    <Compile Include="Discount.cs" />
+    <Compile Include="Entrance.cs" />
+    <Compile Include="EqiAnswer.cs" />
+    <Compile Include="EqiTestQuestion.cs" />
+    <Compile Include="Expert.cs" />
+    <Compile Include="FirmInfo.cs" />
+    <Compile Include="ForecastJob1.cs" />
+    <Compile Include="Forecastjob2.cs" />
+    <Compile Include="ForecastReportComponent.cs" />
+    <Compile Include="Ichinglib1.cs" />
+    <Compile Include="Ichinglib2.cs" />
+    <Compile Include="Ichinglib3.cs" />
+    <Compile Include="Ichinglib4.cs" />
+    <Compile Include="IchingResult.cs" />
+    <Compile Include="IndexLib.cs" />
+    <Compile Include="IpAnswer.cs" />
+    <Compile Include="IpTestQuestion.cs" />
+    <Compile Include="JobIdzywx.cs" />
+    <Compile Include="JobMapBinary.cs" />
+    <Compile Include="Jobs.cs" />
+    <Compile Include="JobView.cs" />
+    <Compile Include="Lib2Profession.cs" />
+    <Compile Include="Lib3.cs" />
+    <Compile Include="Lib4.cs" />
+    <Compile Include="Lib5.cs" />
+    <Compile Include="MatchReportComponent.cs" />
+    <Compile Include="Navigation.cs" />
+    <Compile Include="New.cs" />
+    <Compile Include="NUser.cs" />
+    <Compile Include="ProfessionalDes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryType.cs" />
+    <Compile Include="Region.cs" />
+    <Compile Include="Report.cs" />
+    <Compile Include="Rgwx.cs" />
+    <Compile Include="School.cs" />
+    <Compile Include="ServiceDes.cs" />
+    <Compile Include="TextReportComponent.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserService.cs" />
+    <Compile Include="WilAnswer.cs" />
+    <Compile Include="WilTestQuestion.cs" />
+    <Compile Include="Ylgl.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

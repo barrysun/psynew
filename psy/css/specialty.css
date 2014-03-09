@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+.speSearch{ border:1px solid #abacad; background:#fff; border-top:2px solid #0a75d8; padding:20px; margin-bottom:10px;}
+.speSearch .ssIpt{height:28px; width:335px; line-height:28px; padding:0 5px; border:1px solid #b0b0b0;}
+.speSearch .ssBtn{padding:0 10px; height:30px; line-height:30px; background:#0a75d8; color:#fff; cursor:pointer; border:0;}
+.speSearch .ssMore{ margin-left:20px; display:inline-block; padding:0 10px; height:30px; line-height:30px; background:#0a75d8; color:#fff;}
+.speListW{ background:#fff;border:1px solid #abacad;}
+.speTab{ border-bottom:1px solid #abacad;}
+.speTab thead th{ height:35px; background:#0a75d8; color:#fff;}
+.speTab tbody td{ height:35px; text-align:center;}
+.speListW .page{ padding-bottom:10px;}
+
+.speDia{ width:600px; display:none;}
+.speDia a{ display:inline-block; padding:0 6px; height:25px; line-height:25px; background:url(../images/abg.jpg) no-repeat right; margin:0 0 10px 0;}
+.speDia a.on{ background:#0a75d8; color:#fff; }
+.oneMenu,.twoMenu,.threeMenu{ margin-bottom:10px; border:1px solid #ddd; padding:10px 10px 0 10px; background:#fff;}
+.threeMenu{ height:300px; overflow-y:auto;}
+
+.proDet{ padding:10px; margin-bottom:10px;}
+.proDet h4{ color:#0a75d8; text-align:center;}
+.proTxt{ padding:10px;}
+
+ 

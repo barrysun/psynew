@@ -1,0 +1,90 @@
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/onlineTest.css" rel="stylesheet" type="text/css" />
+ </head>
+<body>
+<div class="main">
+<div class="head clearfix">
+	<div class="logoImg fl">
+    	<img src="images/icon_07.png" height="" />
+    </div>
+</div>
+<div class="online clearfix">
+	<div class="OTtit borderC">
+    这个部分会帮助我们了解你的
+    <span style="font-weight: bold; font-size: 14px; color: #3F7DBD;">性格特点</span>。请仔细阅读每一条，然后回想一下你
+    <span style="font-weight: bold; font-size: 14px; color: #3F7DBD;">平时怎么做、怎么想、是什么感受</span>，再回答该条中的描述在什么程度上符合你
+    <span style="font-weight: bold; font-size: 14px; color: #3F7DBD;">大多数时候</span>的情况。若有些条目你从来没有经历过，就请回答你觉得自己如果遇到那些情况
+    <span style="font-weight: bold; font-size: 14px; color: #3F7DBD;">可能会</span>怎么做、怎么想、怎么感受。若有些条目你不是特别肯定，请选择你认为离你真实情况
+    <span style="font-weight: bold; font-size: 14px; color: #3F7DBD;">最接近</span>的选项。你的答案
+    <span style="font-weight: bold; font-size: 14px; color: #3F7DBD;">无所谓“对”、“错”、“好”、“坏”</span>。请尽量坦率、诚实的回答所有题目，告诉我们
+    <span style="font-weight: bold; font-size: 14px; color: #3F7DBD;">真实的你</span>是什么样的，而不是你希望自己是什么样。这里没有时间限制，但请尽快完成，并且保证
+    <span style="font-weight: bold; font-size: 14px; color: #3F7DBD;">每一道题</span>你都认真想过并作出回答。特别提示：答题时请不要过分谦虚或夸张，也不要过分中庸，一定表达真实的你，才有利于帮助分析你的性格特点。
+  </div>
+    <div class="OTLeft borderC">
+      <div class="bar" id="navt">
+        <div class="barw">
+          <h4>当前做题情况</h4>
+          <div class="barBox clearfix">
+            #{TITLESTR}#
+          </div>
+        </div>
+      </div>
+         <form id="form1" method="post"  action="Question.aspx">
+    <div class="OTcont">
+    	#{IPHTML}#
+    </div>
+    <div class="OTBtn">
+    	<input id="anssubmit" type="button" value="提交" />
+    </div>
+
+             </form>
+</div>
+
+  
+</div>
+</div>
+
+<script type="text/javascript" src="jquery/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript">
+    $(window).scroll(function() {
+    var scrolls = $(this).scrollTop();
+    if(scrolls > 200){
+    $("#navt").addClass("fix");
+    }else{
+    $("#navt").removeClass("fix");
+    }
+    });
+
+
+    $(function(){
+    $("#anssubmit").click(function(){
+    var ipcount=0;
+    $(".barBox span").each(function(){
+    if(!$(this).hasClass("complete")){ ipcount++; }
+    });
+    if(ipcount>0)
+    {
+    alert("未答完本页！");
+    }
+    else
+    {
+    $("#form1").submit();
+    }
+
+    });
+    });
+
+  </script>
+  <script type="text/javascript">
+    function checkAnswer(id)
+    {
+    document.getElementById(id).className="complete";
+    }
+
+  </script>
+  
+    </body>
+

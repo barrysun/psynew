@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="index.master.cs" Inherits="admin_index" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <%--曾沿用--%>
+ <link rel="Stylesheet" type="text/css" href="css/mflStyle.css" />
+<link href="../css/style.css" type="text/css" rel="stylesheet" />
+<%--曾沿用--%>
+   
+   
+   
+<%--弹出窗口--%>
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<script type="text/javascript" src="js/thickbox_plus.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/thickbox.css"/>
+<%--弹出窗口--%>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body >
+    <form id="form1" runat="server">
+   <div class="text">
+    
+      <table style="width:90%; margin-left:30px" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td style="width:30px; height:21px; background-image:url('../images/bj_1.gif'); background-repeat:no-repeat;"></td>
+        <td style="background-image:url('../images/bj_2.gif'); background-repeat:repeat-x;">&nbsp;</td>
+        <td style="width:31px; height:21px;background-image:url('../images/bj_3.gif'); background-repeat:no-repeat"></td>
+      </tr>
+      <tr>
+        <td style="width:30px; background-image:url('../images/bj_4.gif');  background-repeat:repeat-y; height:420px;  "></td>
+        <td valign="top" >
+            
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"  >
+        </asp:ContentPlaceHolder>
+        
+        
+          </td>
+        <td style="width:31px;background-image:url('../images/bj_6.gif'); background-repeat:repeat-y"></td>
+      </tr>
+       <tr>
+        <td style="width:30px; height:21px;background-image:url('../images/bj_7.gif'); background-repeat:no-repeat;"></td>
+        <td style="background-image:url('../images/bj_8.gif'); background-repeat:repeat-x;">&nbsp;</td>
+        <td style="width:31px; height:21px;background-image:url('../images/bj_9.gif'); background-repeat:no-repeat"></td>
+      </tr>
+    </table>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,80 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.titComm{ border-bottom:2px solid #abacad;  height:30px; background:url(../images/icon_35.gif) no-repeat 8px; padding-right:10px;}
+.titComm .tit{ position:relative; color:#066ecf; display:inline-block; border-bottom:2px solid #066ecf; height:30px; line-height:30px; padding:0 15px 0 20px;}
+.titComm .more{ font-size:12px; font-weight:normal; line-height:28px;}
+
+
+.slide{ border:1px solid #abacad; margin-bottom:15px; position:relative; height:292px; overflow:hidden;}
+.slide ul{ width:1098px; }
+.slide li{ width:1098px;  float:left; font-size:0;}
+.slide li img{ width:1098px; height:292px;}
+.slide .prev1,.slide .next1{ display:block; position:absolute; z-index:1; zoom:1;background:url(../images/foc_btn.png) no-repeat;_background:url(../images/foc_btn_8.png) no-repeat;width:31px;height:50px;_filter:Alpha(opacity=70);}
+.slide .prev1{ top:115px;background-position:0 0;left:10px; }
+.slide .next1{top:115px; background-position:-33px 0;right:10px; }
+
+.twoBox{ margin-bottom:15px;}
+.tbBox{width:540px;}
+.oneBox{ margin-bottom:15px;}
+
+.sixTest{ width:1100px; overflow:hidden;}
+.tBoxW{ width:1150px; margin-bottom:15px;}
+.tBox{ width:354px; background:#fff; float:left; margin:0 16px 15px 0;}
+.tbCont{padding:10px 10px 10px 100px;}
+.tbCont1{ background:url(../images/1.jpg) no-repeat 10px;}
+.tbCont2{ background:url(../images/2.jpg) no-repeat 10px;}
+.tbCont3{ background:url(../images/3.jpg) no-repeat 10px;}
+.tbCont4{ background:url(../images/4.jpg) no-repeat 10px;}
+.tbCont5{ background:url(../images/5.jpg) no-repeat 10px;}
+.tbCont6{ background:url(../images/6.jpg) no-repeat 10px;}
+.tbBtn{ height:30px; line-height:30px; text-align:center; border-top:1px dotted #ddd;}
+.tbBtn a{ color:#066ecf; }
+
+.dyMain{ width:800px;}
+.news{ margin-bottom:15px;}
+.dyCont{ padding:10px; width:778px; overflow:hidden; background:url(../images/icon_47.gif) no-repeat 390px 10px;}
+.newList{width:830px;}
+.newList li{ float:left; width:350px; margin-right:45px; overflow:hidden; *zoom:1; background:url(../images/icon_39.gif) no-repeat left; padding:5px 0 5px 15px; border-bottom:1px dotted #CCC;}
+.newList li.newLi1{ width:365px; padding:0 0 5px 0; background:none; border-bottom:none;}
+.newList li .dyImg{ padding:5px; border:1px solid #ddd; margin-right:10px;}
+.newList li .newDet{ width:225px; height: 85px; overflow:hidden;}
+.newList li .newDet .newTit{ display:block; font-size:14px; color:#066ecf; padding-bottom:7px;}
+.newList li .newTit2{ display:inline-block; width:240px; }
+.newList li .newTit2:hover{ color:#066ecf;}
+.newList li .times{  display:inline-block; width:95px; text-align:right;}
+
+.jobs{ border-top:2px solid #066ecf; padding:10px; width:778px; overflow:hidden;}
+.dlW{background:url(../images/icon_47.gif) no-repeat 380px 0; width:820px;}
+.dlBox{ width:365px; margin-right:45px; float:left;}
+.dlBox dt{ height:30px; line-height:30px;}
+.dlBox dt span{color:#066ecf; font-size:14px; font-weight:bold; background:url(../images/icon_43.gif) no-repeat left; padding-left:25px;}
+.dlBox dd{ padding:5px 0; border-bottom:1px dotted #ddd;}
+.dlBox .ddJob{ float:left; padding-right:13px;}
+.dlBox .ddJob a{ float:left;cursor:pointer; display:block; width:108px;}
+.dlBox .ddJob a img{ width:100px; height:141px; border:#F2F2F2 solid 3px; padding:1px; background-color:#9EC7C8;}
+.dlBox .ddJob a span{ float:left; width:100%;  line-height:18px; padding-top:4px; overflow:hidden; text-align:center;}
+.dlBox .ddJob a .pName{ font-size:14px; color:#066ecf;}
+.dlBox .ddJob a:hover{ border:none; text-decoration:underline;}
+.dlBox .ddJob a:hover img{ border-color:#F37E03; background-color:#D75303;}
+.dlBox .ddJob a:hover span{ text-decoration:underline;}
+
+.dySide{ width:285px;}
+.dsCont{ padding:10px 10px 0 10px;}
+.expert li{ padding-bottom:10px;}
+.expert li .expertImg{ width:85px;}
+.expert li .expertImg a{ display:block; width:60px; height:75px; padding:4px; border:1px solid #ddd;}
+.expert li .expertInfo{ width:178px; height:85px; overflow:hidden;}
+.expert li .expertInfo .exTit{ padding-bottom:4px;}
+.expert li .expertInfo .exTit a{ font-size:14px; color:#066ecf;}
+.expert li .expertInfo .exJob{ padding-bottom:4px;}
+.vip li{ padding:5px 0; background:url(../images/icon_50.png) no-repeat left; padding-left:10px;}
+
+
+.studying{ width:1098px; overflow:hidden;}
+.studyCont .tStudy{ width:1200px;}
+.studyCont .tStudy .dlBox{width:245px; background:url(../images/icon_47.gif) no-repeat right; padding-right:30px; margin-right:0;}
+.studyCont .tStudy .dlBox dd a{ background:url(../images/icon_50.png) no-repeat left; padding-left:10px;}
+.studyCont .cStydy{ width:1200px;}
+.studyCont .cStydy .dlBox{width:520px; background:url(../images/icon_47.gif) no-repeat right; padding-right:30px; margin-right:0;}
+.studyCont .cStydy .dlBox dd a{ background:url(../images/icon_50.png) no-repeat left; padding-left:10px;}
+
